@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>  
+    <title>Speck Academy 2023</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="headerTitle">
+        <h2>My technologies</h2>
+    </div>
+    <div class="inputWrapper">
+      <div class="inputWrapperLeftContent">
+        <input type="text" id="inputValue" placeholder="Enter new technology...">
+        <span onclick="createNewItem()" id="addButton">Add</span>
+      </div> 
+      <div class="inputWrapperRightContent">
+        <span id="clearAllButton" onclick="clearAllItems()">Remove all items</span>
+      </div>    
+    </div>
+    <div class="cardsWrapper">
+        <ul id="cardsList">
+        </ul>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

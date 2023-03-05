@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+  }
+ 
+  .headerTitle {    
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-size: 22px;
+    font-weight: 900;    
+    letter-spacing: -0.02em;
+  }
+
+  .inputWrapper {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .inputWrapperLeftContent{
+    width: 50%;
+  }
+
+  .inputWrapperRightContent{
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  input {
+    width: 50%; 
+    height: 30px; 
+    padding: 0px 10pX;
+    border: 1px solid #c03939;
+    border-radius: 8px;
+    transition: .5s;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: #000000;
+  }
+
+  #addButton {
+    height: 30px;
+    width: 15%;
+    margin-left: 5%;
+    border-radius: 5px;
+    background-color: #fcede8;
+    color: #c03939;
+    border: 1px solid #c03939;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: opacity .1s;
+  }
+
+  #addButton:hover {
+    background-color: #c03939;    
+    color: #ffffff;
+  }
+
+ #clearAllButton {
+    color: #c03939;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  #clearAllButton:hover{
+    color: #861b1b;
+  }
+
+  .cardsWrapper{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 50%;  
+  }
+
+  #cardsList{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    gap: 15px;
+  }
+
+  ul li {
+    width: 90%;
+    cursor: pointer;
+    list-style-type: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    background: #ffffff;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    font-weight: 700;   
+    text-align: center;
+  }
